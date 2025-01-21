@@ -1,0 +1,31 @@
+
+
+.entrada1{
+    background-color: rgb(219, 230, 244);
+    color: rgb(55, 55, 182);
+    font-size:1rem;
+    padding:5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    border-radius: 4px;
+}
+.boton{
+    background-color: rgb(48, 92, 225);
+    color: white;
+    font-size:1rem;
+    padding:5px 20px 5px 20px ;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top:1rem ;
+    border-radius: 4px;
+}
+.parrafo{
+
+    font-size: 1rem;
+    color: white;
+}
+
+/*  */
+
+
