@@ -76,16 +76,7 @@ function calcularAreaPerimetro(radio){
 function tablaMultiplicar(nunTabla){
   
     nunTabla = document.getElementById('nunTabla').value;
-   
-/*    let contador = 1;
-    while( contador <= 12 ){ 
-        let numeroMulti = nunTabla * contador;
-        console.log(`contador ${contador}, multi ${numeroMulti}`);
-      
-        contador ++; 
-        asignarTextoElemento('#parrafo5',`  ${nunTabla} x ${contador} = ${numeroMulti}`);
 
-    } */
 
 
         let contador = 1;
@@ -93,21 +84,6 @@ function tablaMultiplicar(nunTabla){
             let numeroMulti = nunTabla * contador;
             
             console.log(`contador ${contador}, multi ${numeroMulti}`);
-            //
-           /*  var newDiv = document.createElement("p");
-           
-                newDiv.setAttribute("id", "p");
-                newDiv.setAttribute("class", "parrafo")
-            var newContent = document.createTextNode(`  ${nunTabla} x ${contador} = ${numeroMulti}`);
-            console.log('=>>> '+ contador);
-            newDiv.appendChild(newContent); //añade texto al div creado.
-        
-            // añade el elemento creado y su contenido al DOM
-            var currentDiv = document.getElementById("div1");
-            console.log('node => ' +currentDiv)
-            document.body.insertBefore(newDiv, newDiv); */
-
-
             let parrafo = document.createElement('p');
             parrafo.setAttribute("class", "parrafo")
             let textoParrafo = document.createTextNode(`  ${nunTabla} x ${contador} = ${numeroMulti}`);
@@ -126,17 +102,6 @@ function tablaMultiplicar(nunTabla){
  
     //  addElement();
 }
-/* function addElement() {
-    // crea un nuevo div
-    // y añade contenido
-    var newDiv = document.createElement("div");
-    var newContent = document.createTextNode("Hola!¿Qué tal?");
-    newDiv.appendChild(newContent); //añade texto al div creado.
-  
-    // añade el elemento creado y su contenido al DOM
-    var currentDiv = document.getElementById("div1");
-    document.body.insertBefore(newDiv, currentDiv);
-  }
- */
+
 
 inicialtextos()
