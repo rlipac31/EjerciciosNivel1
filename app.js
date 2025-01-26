@@ -74,9 +74,22 @@ function calcularAreaPerimetro(radio){
 
 function tablaMultiplicar(nunTabla){
    
-    limpiarTabla();
-    nunTabla = document.getElementById('nunTabla').value;
+      limpiarTabla();
+    nunTabla = parseInt(document.getElementById('nunTabla').value);
     asignarTextoElemento('#parrafo5',  `la tabla de ${nunTabla} es: `);
+   
+
+    if(!Number.isInteger(nunTabla)){
+        let numeroNOvalido = document.getElementById('nunTabla').value;
+        asignarTextoElemento('#parrafo5',  ` ${numeroNOvalido} no es un numero: `);
+        console.log('no  es numero....');
+     
+    }else if(nunTabla < 0 || nunTabla > 12){
+        asignarTextoElemento('#parrafo5',  ` ${nunTabla} no es un numero valido inserte solo del 1 al 12: `);
+        console.log('no  es numero valido');
+    }else{
+      
+        console.log('multiplicando');
         let contador = 1;
         while( contador <= 12 ){ 
             let numeroMulti = nunTabla * contador;     
@@ -87,11 +100,15 @@ function tablaMultiplicar(nunTabla){
             //agregar nondo
             let elementoPadre = document.querySelector('.padre');//capturamos el elemeento padre
             elementoPadre.appendChild(parrafo);//insertamos el elemento en dentro del elemento padre
-             parrafo.appendChild(textoParrafo);// insertamos el texto dentro del elemento hijo
+             parrafo.appendChild(textoParrafo);// 
             contador ++;    
         }
-        document.getElementById("nunTabla").value = "";//esetea el input despues de imprimir la tabla
+      
        // console.log('nun tabla '+ nunTabla)
+    }
+    document.getElementById("nunTabla").value = "";//esetea el input despues de imprimir la tabla
+  
+     
 }
  function limpiarTabla(){
    let tablaMultiplicar =  document.getElementById("padre");//capturando el elemennto padre
