@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css">
-    
+
 </head>
 
 <body>
@@ -32,19 +32,20 @@
                     funciones es uno de los conceptos fundamentales en la programación y el desarrollo de software. Las
                     funciones desempeñan un papel crucial en la organización, modularización y reutilización del código.
                 </p>
-                <p class=" text-pretty text-lg font-medium text-gray-300 sm:text-xl/8">Revisa los ejercicios resueltos<a href="https://github.com/rlipac31" class="text-blue-600 visited:text-purple-600 ...">
-                    en mi Git Hub 
-                  </a>
+                <p class=" text-pretty text-lg font-medium text-gray-300 sm:text-xl/8">Revisa los ejercicios resueltos<a
+                        href="https://github.com/rlipac31" class="text-blue-600 visited:text-purple-600 ...">
+                        en mi Git Hub
+                    </a>
                 </p>
-                
+
             </div>
             <div class="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none" id="div1">
 
                 <dl class="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-5">
                     <div class="flex flex-col gap-1">
                         <h3 class="text-4xl font-semibold tracking-tight text-white mb-2">Hayar IMC</h3>
-                        <p class="parrafo" id="parrafo1"></p>         
-                         <form action="#" method="POST" onsubmit="return false;">
+                        <p class="parrafo" id="parrafo1"></p>
+                        <form action="#" method="POST" onsubmit="return false;">
                             <input type="text" class="entrada1" name="peso" id="peso" placeholder="Peso">
                             <input type="text" class="entrada1" name="altura" id="altura" placeholder="Altura">
                             <div>
@@ -54,10 +55,10 @@
                     </div>
                     <div class="flex flex-col gap-1">
                         <h3 class="text-4xl font-semibold tracking-tight text-white mb-2">Factorial</h3>
-                        <p class="parrafo" id="parrafo2"></p>         
-                         <form action="#" method="POST" onsubmit="return false;">
-                            <input type="number" class="entrada1" name="numero" id="numeroF" min="1" max="20" placeholder="ingresa un numero">
-                            
+                        <p class="parrafo" id="parrafo2"></p>
+                        <form action="#" method="POST" onsubmit="return false;">
+                            <input type="number" class="entrada1" name="numero" id="numeroF" min="1" max="20"
+                                placeholder="ingresa un numero">
                             <div>
                                 <input type="submit" class="boton" onclick="factorial()" value="Calcular">
                             </div>
@@ -65,10 +66,11 @@
                     </div>
                     <div class="flex flex-col gap-1">
                         <h3 class="text-4xl font-semibold tracking-tight text-white mb-2">Conversion</h3>
-                        <p class="parrafo" id="parrafo3"></p>         
-                         <form action="#" method="POST" id="form3" onsubmit="return false; ">
+                        <p class="parrafo" id="parrafo3"></p>
+                        <form action="#" method="POST" id="form3" onsubmit="return false; ">
                             <input type="text" class="entrada1" name="dolar" id="dolar" placeholder="Peso">
-                            <input type="text" class="entrada1" name="resultado" id="resultado" placeholder="resultado" disabled>
+                            <input type="text" class="entrada1" name="resultado" id="resultado" placeholder="resultado"
+                                disabled>
                             <div>
                                 <input type="submit" class="boton" onclick="convertirMoneda()" value="Calcular">
                             </div>
@@ -76,35 +78,31 @@
                     </div>
                     <div class="flex flex-col gap-1">
                         <h3 class="text-4xl font-semibold tracking-tight text-white mb-2">Perimetro circulo</h3>
-                        <p class="parrafo" id="parrafo4"></p>         
-                         <form action="#" method="POST" onsubmit="return false;">
-                            <input type="text" class="entrada1" name="area" id="area" placeholder="Ingrese el rradio de su sala">
-                          
+                        <p class="parrafo" id="parrafo4"></p>
+                        <form action="#" method="POST" onsubmit="return false;">
+                            <input type="text" class="entrada1" name="area" id="area"
+                                placeholder="Ingrese el rradio de su sala">
                             <div>
                                 <input type="submit" class="boton" onclick="calcularAreaPerimetro()" value="Calcular">
                             </div>
                         </form>
-                          
                     </div>
-                    <div   class="flex flex-col gap-1">
-                        <h3  class="text-4xl font-semibold tracking-tight text-white mb-2">Tabla Multiplicar</h3>
-                        
-                            <p  class="parrafo" id="parrafo5"></p> 
-                            <div id="padre" class="padre">
-
-                            </div> 
-                        
-                         <form action="#" method="POST" onsubmit="return false;">
-                            <input type="number" class="entrada1"  name="nunTabla" id="nunTabla" min="1" max="12" placeholder="Ingresa un numero">
-                            
+                    <div class="flex flex-col gap-1">
+                        <h3 class="text-4xl font-semibold tracking-tight text-white mb-2">Tabla Multiplicar</h3>
+                        <p class="parrafo" id="parrafo5"></p>
+                        <form action="#" method="POST" onsubmit="return false;">
+                            <input type="number" class="entrada1" name="nunTabla" id="nunTabla" min="1" max="12"
+                                placeholder="Ingresa un numero">
                             <div>
                                 <input type="submit" class="boton" onclick=" tablaMultiplicar()" value="Calcular">
                             </div>
-                             
+                            <div id="padre" class="padre">
+                            </div>
                         </form>
+                        
                     </div>
-                
-                   
+
+
                 </dl>
             </div>
         </div>

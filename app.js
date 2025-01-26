@@ -10,8 +10,8 @@ function inicialtextos(){
 
 function asignarTextoElemento(elemento, texto) {
    
-    let elementoHTML = document.querySelector(elemento);
-    elementoHTML.innerHTML = texto;
+    let elementoHTML = document.querySelector(elemento);//captura el tipoo de elemento que le pasamoms como parametro
+    elementoHTML.innerHTML = texto;//insertamos el texto que pasamos como parametro en la funcion
     return;
 }
 
@@ -62,7 +62,6 @@ function convertirMoneda(valor){
 //  utilizando su radio que se proporcionará como parámetro. Considera Pi = 3,14.
 
 const pi = 3.14;
-
 function calcularAreaPerimetro(radio){
     radio = document.getElementById('area').value;
     let area = pi * (radio * radio);
@@ -74,34 +73,32 @@ function calcularAreaPerimetro(radio){
 //Crea una función que muestre en pantalla la tabla de multiplicar de un número dado como parámetro.
 
 function tablaMultiplicar(nunTabla){
-  
+   
+    limpiarTabla();
     nunTabla = document.getElementById('nunTabla').value;
-
-
-
+    asignarTextoElemento('#parrafo5',  `la tabla de ${nunTabla} es: `);
         let contador = 1;
         while( contador <= 12 ){ 
-            let numeroMulti = nunTabla * contador;
-            
-            console.log(`contador ${contador}, multi ${numeroMulti}`);
-            let parrafo = document.createElement('p');
-            parrafo.setAttribute("class", "parrafo")
-            let textoParrafo = document.createTextNode(`  ${nunTabla} x ${contador} = ${numeroMulti}`);
+            let numeroMulti = nunTabla * contador;     
+          //  console.log(`contador ${contador}, multi ${numeroMulti}`);
+            let parrafo = document.createElement('p');//creamos el elemento
+            parrafo.setAttribute("class", "parrafo");
+            let textoParrafo = document.createTextNode(`${nunTabla} x ${contador} = ${numeroMulti}`);//creamos el texto
             //agregar nondo
-            let elementoPadre = document.querySelector('.padre');
-            elementoPadre.appendChild(parrafo);
-             parrafo.appendChild(textoParrafo);
-
-            //
-           
-            contador ++; 
-           asignarTextoElemento('#parrafo5',` `);
-    
+            let elementoPadre = document.querySelector('.padre');//capturamos el elemeento padre
+            elementoPadre.appendChild(parrafo);//insertamos el elemento en dentro del elemento padre
+             parrafo.appendChild(textoParrafo);// insertamos el texto dentro del elemento hijo
+            contador ++;    
         }
-   
- 
-    //  addElement();
+        document.getElementById("nunTabla").value = "";//esetea el input despues de imprimir la tabla
+       // console.log('nun tabla '+ nunTabla)
+}
+ function limpiarTabla(){
+   let tablaMultiplicar =  document.getElementById("padre");//capturando el elemennto padre
+  //  tablaMultiplicar.innerHTML= ''; limpinaod hijos pasando un cadena vacia al padre
+    while(tablaMultiplicar.firstChild){// remueve los hijos simpre cuando haya un primer elemento(funcion removeChild)
+        tablaMultiplicar.removeChild(tablaMultiplicar.firstChild);
+    }
 }
 
-
-inicialtextos()
+inicialtextos();//llamando texxtos iniciales para toodos los ejercicios
